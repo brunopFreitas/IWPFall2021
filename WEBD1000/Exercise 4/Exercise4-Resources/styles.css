@@ -1,0 +1,53 @@
+/* 
+    Styles for Acme Paint Shop 
+
+    Author: Bruno Freitas
+    Date: 2021-09-27
+
+*/
+
+body { 	
+    background-color: darkred;
+    font-family: arial;
+    color: #e0e0e0;
+}
+
+header, footer { 
+    text-align: center; 
+}
+
+article h3 {
+    text-decoration: underline; 
+}
+
+a { 
+    text-decoration : none;
+    color: #e0e0e0; 
+}
+
+a:hover {
+    text-decoration: underline; 
+}
+
+a:visited { 
+    color: #909090; 
+} 
+
+#philosophy p { 
+    padding-left: 20px; 
+}
+
+.important {
+    font-weight: bold; 
+    font-style: italic; 
+    font-size: 1.2em;
+}
+
+.onsale::after { 
+    content: " (ON SALE TODAY!!!)"; 
+    font-style: italic; 
+}
+
+#locationmap { 
+    padding-left: 50px; 
+}
