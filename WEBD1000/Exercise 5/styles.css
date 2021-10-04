@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/*
+    Name: brunoFreitas
+    Date: 2021-10-04
+*/
+body {
+    background-color: skyblue;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+strong {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+p {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 1.2em;
+}
+
+#p1{
+    background-color: rgb(255,0,0,0.5);
+}
+
+#p2{
+    background-color: rgb(0,255,0,0.5);
+}
+
+#p3{
+    background-color: rgb(0,0,255,0.5);
+}
+
+#p4{
+    background-color: rgb(255,255,0,0.5);
+}
+
+#p5{
+    background-color: rgb(0,255,255,0.5);
+}
+
+.hardToRead {
+    font-weight: bold;
+}
