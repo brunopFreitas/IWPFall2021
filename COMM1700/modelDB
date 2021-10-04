@@ -1,0 +1,31 @@
+Anxiety
+    - id int
+    - name string
+    - desciption string
+    - level int
+Stress
+    - id int
+    - name string
+    - description string
+    - level int
+physicalActivity
+     - id int
+     - name string
+     - description string
+mentalActivity
+    - id int
+    - name string
+    - description string
+emotionalResilienceProject
+    - date date
+    - anxietyLevel int
+    - stressLevel int
+    - physicalActivityPerformed int
+    - mentalActivityPerformed int
+    - eventTime timestamp
+
+----------------------------------------
+mon - physical
+wed - mental
+fri - physical & mental
+tue - thu - nothing
