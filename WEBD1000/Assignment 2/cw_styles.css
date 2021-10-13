@@ -1,0 +1,91 @@
+﻿/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 2
+   Case Problem 2
+   
+   Civil War History Style Sheet
+   Author: Bruno Freitas   
+   Date: 2021-10-13   
+   
+   Filename: cw_styles.css
+
+*/
+
+@font-face {
+   font-family: limelight;
+   src: url(font/Limelight-Regular.ttf);
+/*source: https://www.w3schools.com/css/css3_fonts.asp*/
+}
+
+/* Structural Styles */
+html {
+   background-color: rgb(151,151,151);
+}
+
+body {
+   background-color: rgb(180,180,223);
+   font-family: Verdana, Geneva, sans-serif;
+}
+
+h1 {
+   font-weight: normal;
+}
+
+h2 {
+   font-weight: normal;
+}
+
+nav a {
+   text-decoration: none;
+}
+
+footer {
+   color: white;
+   background-color: rgb(101,101,101);
+   font-size: 0.8em;
+   text-align: center;
+   padding-top: 1px;
+   padding-bottom: 1px;
+}
+
+/* Body Header Styles */
+body header {
+   background-color: rgb(97,97,211);
+}
+
+body header h1 {
+   font-size: 4vw;
+   color: rgba(255,255,255,0.8);
+   font-family: limelight, cursive;
+   margin: 0px;
+}
+
+body header h1 span {
+   color: rgba(255,255,255,0.4);
+}
+
+/* Navigation Styles */
+.mainLinks a {
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+
+
+/* Outline Styles */
+
+
+
+
+/* Section Styles */
+
+
+
+
+/* Article Styles */
+
+
+
+
+/* Aside Styles */
+
