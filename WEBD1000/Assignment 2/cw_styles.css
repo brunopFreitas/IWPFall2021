@@ -1,4 +1,6 @@
-﻿/*
+﻿@charset "utf-8";
+@import url(cw_layout.css);
+/*
    New Perspectives on HTML5 and CSS3, 8th Edition
    Tutorial 2
    Case Problem 2
@@ -49,43 +51,114 @@ footer {
 }
 
 /* Body Header Styles */
-body header {
+body > header {
    background-color: rgb(97,97,211);
 }
 
-body header h1 {
+body > header > h1 {
    font-size: 4vw;
    color: rgba(255,255,255,0.8);
    font-family: limelight, cursive;
    margin: 0px;
 }
 
-body header h1 span {
+body > header > h1 > span {
    color: rgba(255,255,255,0.4);
 }
 
 /* Navigation Styles */
-.mainLinks a {
+#mainLinks a {
    padding-top: 5px;
    padding-bottom: 5px;
 }
 
+#mainLinks a:link{
+   color: white;
+}
 
+#mainLinks a:visited {
+   color: white;
+}
+
+#mainLinks a:active {
+   color: white;
+   opacity: 0.8;
+   background-color: rgba(51,51,51,0.5);
+}
+
+#mainLinks a:hover {
+   color: white;
+   opacity: 0.8;
+   background-color: rgba(51,51,51,0.5);
+}
 
 /* Outline Styles */
+#outline a {
+   color: rgb(51,51,51);
+   font-size: 0.8em;
+}
 
+#outline > h1 {
+   text-align: center;
+}
 
+#outline > ol {
+   line-height: 2em;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   margin-left: 5px;
+   margin-right: 5px;
+   list-style: upper-roman;
+}
 
+#outline > ol  ol {
+   list-style: upper-latin;
+
+}
+
+#outline a:link {
+   color: rgb(101,101,101);
+}
+
+#outline a:visited {
+   color: rgb(101,101,101);
+}
+
+#outline a:hover {
+   color: rgb(97,97,211);
+}
+
+#outline a:active {
+   color: rgb(97,97,211);
+}
 
 /* Section Styles */
+section {
+   background-color: rgb(220,220,220);
+}
 
-
-
+section > header > h1 {
+   font-size: 2.2em;
+   padding-left: 10px;
+}
 
 /* Article Styles */
+section > article > h2 {
+   font-size: 1.4em;
+}
 
-
-
+section > article > p:first-of-type::first-letter {
+   font-size: 2em;
+}
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:first-of-type */
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter*/
 
 /* Aside Styles */
+body > section > aside {
+   font-size: 0.9em;
+}
 
+body > section > aside > h1 {
+   font-size: 1.4em;
+   text-align: center;
+}
