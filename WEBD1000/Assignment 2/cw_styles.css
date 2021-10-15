@@ -149,9 +149,10 @@ section > article > h2 {
 
 section > article > p:first-of-type::first-letter {
    font-size: 2em;
+   /*Source: https://developer.mozilla.org/en-US/docs/Web/CSS/:first-of-type */
+   /*Source: https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter*/
 }
-/* https://developer.mozilla.org/en-US/docs/Web/CSS/:first-of-type */
-/*https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter*/
+
 
 /* Aside Styles */
 body > section > aside {
