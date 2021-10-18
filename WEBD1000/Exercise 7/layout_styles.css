@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* 
+    Author: Bruno Freitas
+    Date: 2021-10-18
+    Layout style page for Acme Lawn Care.
+*/
+
+body {
+    min-width: 800px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+img {
+    float: right;
+}
+
+#mowing {
+    float:left;
+    width: 40%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 20px;
+    height: 350px;
+}
+
+#weeding {
+    float: left;
+    width: 40%;
+    margin-right: 4%;
+    margin-bottom: 20px;
+    height: 350px;
+}
+
+#landscaping {
+    clear: both;
+    width: 88%;
+    margin-left: 4%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+}
