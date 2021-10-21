@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*
+Author: Bruno Freitas
+Date: 2021-10-21
+Layout style page for Acme Lawn Care and that it uses a CSS grid
+*/
+
+body > header > h1, body > section > h2 {
+    text-align: center;
+}
+
+body > section > article > img {
+    float: left;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+body > section {
+    display: grid;
+    grid-template-rows: 100px auto auto;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 2%;
+    row-gap: 50px;
+}
+
+body > section > h2 {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
+
+#mowing {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#weeding {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#landscaping {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+}
