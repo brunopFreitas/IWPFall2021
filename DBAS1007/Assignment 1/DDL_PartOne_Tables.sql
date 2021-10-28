@@ -4,6 +4,7 @@ Date: 2021-10-25
 */
 
 /*Creating database*/
+DROP DATABASE IF EXISTS Products_DDL;
 CREATE DATABASE Products_DDL;
 
 /*Using the database just created*/

@@ -4,6 +4,7 @@ Date: 2021-10-25
 */
 
 /*Creating database*/
+DROP DATABASE IF EXISTS Products_DDL;
 CREATE DATABASE Products_DDL;
 
 /*Using the database just created*/
@@ -15,7 +16,7 @@ USE Products_DDL;
 CREATE TABLE Product (
     ProductID int PRIMARY KEY AUTO_INCREMENT,
     ProductCode varchar(10) NOT NULL UNIQUE,
-    ProductName text NOT NULL,product
+    ProductName text NOT NULL,
     Description text, 
     RetailPrice numeric(9,2) NOT NULL,
     SalePrice numeric(9,2),
@@ -23,8 +24,8 @@ CREATE TABLE Product (
     NumberInStock int NOT NULL DEFAULT(0),
     IsActive int NOT NULL DEFAULT(1),
     IsDiscontinued int NOT NULL DEFAULT(1),
-    CONSTRAINT RetailPrice CHECK ((RetailPrice <> 0)),
-    CONSTRAINT SalePrice CHECK ((SalePrice <> 0)),
+    CONSTRAINT RetailPrice CHECK ((RetailPrice > 0)),
+    CONSTRAINT SalePrice CHECK ((SalePrice > 0)),
     CONSTRAINT ProductRating CHECK ((ProductRating>=1||ProductRating<=5))
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
