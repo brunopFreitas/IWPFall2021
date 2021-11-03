@@ -1,4 +1,4 @@
-use country;
+use countryData;
 INSERT INTO 
     country (name,population,landArea) 
 VALUES 
@@ -31,7 +31,7 @@ VALUES
     ("Brazil",203429773,3286470),
     ("Brunei",401890,2228),
     ("Bulgaria",7093635,42822),
-    ("Burkina "Faso,16751455,105869),
+    ("Burkina Faso",16751455,105869),
     ("Burundi",10216190,10745),
     ("Cambodia",14701717,69900),
     ("Cameroon",19711291,183567),
