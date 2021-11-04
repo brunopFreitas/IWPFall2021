@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* 
+Author: Bruno Freitas
+Date: 2021-11-04
+*/
+body {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 50%;
+}
+
+body > article p, h2, footer {
+    text-align: center;
+}
+
+body > article > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > article h2 {
+    margin-top: 50px;
+}
+
+body > article footer {
+    padding: 10px;
+}
+
+
+

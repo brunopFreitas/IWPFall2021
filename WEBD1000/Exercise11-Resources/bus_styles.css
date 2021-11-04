@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* 
+Author: Bruno Freitas
+Date: 2021-11-04
+*/
+
+html {
+    background-image: url(schollbus.jpg);
+}
+
+body {
+    background-image: linear-gradient(gold, white);
+    border: 3px solid blue;
+    border-radius: 50px;
+    box-shadow: 14px 12px darkblue;
+}
+
+body > article h2 {
+    font-size: 4em;
+    color:ivory;
+    text-shadow: 6px 3px black;
+}
+
+body > article p {
+    font-size: 1.5em;    
+}
+
+body > article footer {
+    font-weight: bold;
+    font-size: 0.8em;
+}
