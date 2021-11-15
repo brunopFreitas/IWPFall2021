@@ -60,10 +60,8 @@ a:hover, a:active {
     max-height: 300px;
   }
 
-.presentation {
-    position: relative;
+  .presentation {
+    text-align: justify;
 }
 
-nav ol li {
-    display: inline;
-}
+
