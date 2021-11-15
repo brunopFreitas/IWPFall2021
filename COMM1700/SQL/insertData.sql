@@ -6,7 +6,7 @@ VALUES
 (default,'Deadpool','',3),
 (default,'Shaggy','',4),
 (default,'Finn','Normal anxiety level',5),
-(default,'SpongeBob','',6),
+(default,'CharlieBrown','',6),
 (default,'BoJackHorseman','',7),
 (default,'TonyStark','',8),
 (default,'Piglet','',9),
@@ -22,8 +22,8 @@ VALUES
 (default,'Aang','Normal stress level',5),
 (default,'Squidward','',6),
 (default,'Buttercup','',7),
-(default,'Taz','',8),
-(default,'Talitha','',9),
+(default,'Rorschach','',8),
+(default,'Taz','',9),
 (default,'Hulk','Highest stress level',10);
 
 INSERT INTO `iwpcomm1700erp`.`mentalactivity`
