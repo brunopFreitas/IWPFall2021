@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML and CSS, 8th Edition
+   Tutorial 6
+   Case Problem 2
+
+   Calendar Style Sheet
+   Author: Bruno Freitas
+   Date: 2021-11-30   
+
+   Filename:   lht_tables.css
+
+*/
+
+/* ===============================
+   Mobile Styles: 0px to 640px 
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
+    
+    table, table tbody, table tbody tr, table tbody tr td, table thead th, table caption {
+        display: block;
+    }
+
+    table thead, table tbody h1 {
+        display: none;
+    }
+
+    table caption {
+        color: white;
+        background-color: rgb(49,51,53);
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+
+    td {
+        border: 1px gray dotted;
+        color: rgb(11,12,145);
+        position: relative;
+        padding-left: 40%;
+        min-height: 40px;        
+    }
+
+    tr:nth-child(odd) {
+        background-color: rgb(255,235,178);
+        border: 2px gray solid
+    }
+
+    table td::before{
+        content: attr(data-date);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40%;
+        padding: 5px;
+    }
+}
+
+/* =============================================
+   Tablet and Desktop Styles: greater than 640px
+   =============================================
+*/
+@media only screen and (min-width: 641px) {
+    table {
+        background-image: url(img/lht_photo1.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 40%;
+        border: 6px rgb(154,64,3) double;
+        border-collapse: collapse;
+        margin: 20px auto 20px auto;
+        table-layout: fixed;
+        width: 85%;
+    }
+
+     table th, table td {
+        border: 1px gray solid;
+        font-size: 0.85em;
+        font-weight: normal;
+        padding: 5px;
+        vertical-align: top;
+        width: 14.28%;
+        word-wrap: normal;
+    }
+
+    table td {
+        background-color: rgba(171,171,171,0.6);
+        color: rgb(11,12,145);
+    }
+
+    table td[data-date~=Sep]{
+        background-color: rgba(232,214,148,0.6);
+        box-shadow: 0 0 20px gray;
+    }
+
+    table caption {
+        caption-side: top;
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 1.2em;
+        letter-spacing: 3px;
+    }
+
+    table thead tr th {
+        background-color: rgb(154,64,3);
+        color: white;
+    }
+
+}
