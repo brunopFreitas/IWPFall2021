@@ -5,6 +5,7 @@
         <title>Contact</title>
         <link rel="stylesheet" href="portfolio_base.css">
         <link rel="stylesheet" href="portfolio_layout.css">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <h1>Contact</h1>
@@ -21,18 +22,26 @@
                 </ol>
             </nav>
         </header>
-        <ul>
-            <li>
-                Name: Bruno Freitas
-            </li>
-            <li>
-                @: appbuilderbruno@gmail.com
-            </li>
-            <li>
-                #: (902)402-0710
-            </li>
-        </ul>
-        <img src="img/theShire.jpg" alt="The Shire" height="320" width="480">
+        <article>
+            <section>
+                <div class="container">
+                    <h2>Contact me</h2>
+                    <form method="POST" name="contact" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="Firstname" placeholder="Your name.." required="">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="Lastname" placeholder="Your last name.." required="">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="Email" placeholder="Your email address.." required="">
+                        <label for="message">mMessage</label> 
+                        <textarea id="message" name="Subject" placeholder="Write something.." required=""></textarea>
+                        <button type="submit"> Submit </button>
+                    </form>
+                  </div>
+                  <!-- Source: https://medium.com/@egwuchinedu69/how-to-send-contact-form-data-to-an-email-address-without-server-side-language-adeec579c586 -->
+            </section>
+        </article>
         <footer>
             <img id="footerImg" src="img/footer.gif" alt="Chill" height="200" width="480">            
         </footer>
