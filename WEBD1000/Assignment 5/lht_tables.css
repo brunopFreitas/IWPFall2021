@@ -42,7 +42,7 @@
         min-height: 40px;        
     }
 
-    tr:nth-child(odd) {
+    tr:nth-of-type(odd) {
         background-color: rgb(255,235,178);
         border: 2px gray solid
     }
