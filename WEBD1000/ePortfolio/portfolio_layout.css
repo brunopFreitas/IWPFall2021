@@ -4,82 +4,25 @@
     Date: 2021-10-25
 */
 
-@media only screen and (max-width: 480px) {
-    /* Resume page */
-    body {
-        background-color: darkolivegreen;
-    }
+/* ===============================
+            MOBILE
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
 
-    body > h1 {
-        font-size: 1.5em;
-    }
+/*menu*/
 
-    #footerImg {
-        width: auto;
-    }
+/*index*/
 
-    a#navicon > img {
-        display: block;
-        width: 10%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+/*Contact*/
 
-    .row {
-        display: none;
-    }
+/*Goals*/
 
-    a#navicon:hover+ol{
-		display: block;
-	}
-    /* Main Page */
+/*Skills*/
 
+/*Resume*/
 
-}
-
-@media only screen and (min-width: 481px) {
-    body {
-        background-color: darkgoldenrod;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    header, article, footer, .menu {
-        grid-column: span 2;
-    }
-
-    #educationTitle {
-        text-align: center;
-    }
     
-    #employmentTitle {
-        text-align: center;
-    }
-    
-    #footerImg {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .menu {
-        text-align: center;
-        margin: 0;
-        padding: 0;
-    }
-
-    .row li{
-        display: inline;
-    }
-
-    .row a {
-        display: inline-block;
-        padding: 10px;
-    }
-
-    a#navicon {
-		display: none;
-	}
 
     .presentation {
         display: flex;
@@ -91,58 +34,91 @@
     }
 }
 
-@media only screen and (min-width: 769px) {
+/* ===============================
+	    TABLET - DESKTOP
+   ===============================
+*/
+@media only screen and (min-width: 641px) {
 
-    body {
-        background-color: darkslategray;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+/*index*/
 
-    body * {
-        grid-column: span 2;
-    }
-
-    #educationTitle {
-        text-align: center;
-    }
-    
-    #employmentTitle {
-        text-align: center;
-    }
-    
-    #footerImg {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .menu {
-        text-align: center;
-        margin: 0;
-        padding: 0;
-    }
-
-    .row li{
-        display: inline;
-    }
-
-    .row a {
-        display: inline-block;
-        padding: 10px;
-        font-size: 1.3em;
-    }
-
-    a#navicon {
-		display: none;
-	}
-
-    .presentation {
+    article#presentation {
         display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
     }
 
-    #introduction, #topic_1 {        
-        flex: 1 200px;
-        padding: 15px;
+    section#icons {
+        flex: 0 1 100px;
     }
+
+    section#introduction {
+        width: 466px;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    section#icons p img {
+        width: 466px;
+        height: auto;
+    }
+
+/*Contact*/
+
+    article#contactFormBox section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    .contactForm {
+        width: 30%;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    .contactForm h2 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    .contactForm label {
+        text-align: center;
+    }
+
+    .contactForm input, .contactForm select, .contactForm textarea {
+        width: 100%;
+        padding: 12px;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+    }
+
+    .contactForm input, .contactForm select, .contactForm textarea {
+        border: 1px solid #ccc;
+    }
+
+    .contactForm textarea {
+        height: 150px;
+        resize: none;
+    }
+
+    .contactForm button {
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+/*Goals*/
+
+/*Skills*/
+
+/*Resume*/
+
 }

@@ -1,30 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="contact" lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Contact</title>
-        <link rel="stylesheet" href="portfolio_base.css">
+        <link rel="stylesheet" href="portfolio_style.css">
         <link rel="stylesheet" href="portfolio_layout.css">
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="portfolio_reset.css">
     </head>
     <body>
-        <h1>Contact</h1>
-        <header class="menu">
-            <nav class="menu">
+        <header>
+            <nav id="menu">
                 <a id="navicon" href="#"><img src="img/tf_navicon.png" alt="" /></a>
-                <ol class="row">
-                    <li><a href="index.html">|Home|</a></li>
-                    <li><a href="contact.html">|Contact|</a></li>
-                    <li><a href="goals.html">|Goals|</a></li>
-                    <li><a href="skills.html">|Skills|</a></li>
-                    <li><a href="resume.html">|Resume|</a></li>
-                    <li><a href="https://www.linkedin.com/in/bruno-pinheiro-de-freitas-8041b9190/" target="_blank">|Linkedin|</a></li>
+                <ol id="row">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="goals.html">Goals</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="resume.html">Resume</a></li>
                 </ol>
             </nav>
         </header>
-        <article>
+        <article id="contactFormBox">
             <section>
-                <div class="container">
+                <div class="contactForm">
                     <h2>Contact me</h2>
                     <form method="POST" name="contact" data-netlify="true">
                         <input type="hidden" name="form-name" value="contact">
@@ -34,7 +32,7 @@
                         <input type="text" id="lastname" name="Lastname" placeholder="Your last name.." required="">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="Email" placeholder="Your email address.." required="">
-                        <label for="message">mMessage</label> 
+                        <label for="message">Message</label> 
                         <textarea id="message" name="Subject" placeholder="Write something.." required=""></textarea>
                         <button type="submit"> Submit </button>
                     </form>
@@ -42,8 +40,14 @@
                   <!-- Source: https://medium.com/@egwuchinedu69/how-to-send-contact-form-data-to-an-email-address-without-server-side-language-adeec579c586 -->
             </section>
         </article>
-        <footer>
-            <img id="footerImg" src="img/footer.gif" alt="Chill" height="200" width="480">            
+        <footer id="fixedFooter">
+            <p>
+                Bruno Freitas W0448225</br>
+                WEBD1000</br>
+                IT Web Programming</br>
+                NSCC - IT Campus</br>
+                Halifax - Nova Scotia - Canada
+            </p>
         </footer>
     </body>
 </html>
