@@ -14,7 +14,7 @@ article, footer, header, nav, section
 
 article, aside, body, footer, 
 h1, h2, h3, h4, h5, h6, header, html, img, 
-li, nav, nav a, ol, p, section, ul {
+li, nav, nav a, ol, p, section {
    margin: 0;
    padding: 0;
    border: 0;
@@ -41,7 +41,7 @@ li, nav, nav a, ol, p, section, ul {
       text-align: center;
       list-style: none;
       list-style-image: none;
-      background-image: linear-gradient(0deg, white, lightgray);
+      background-image: linear-gradient(0deg, white, lightblue);
    }
 
    nav#menu ol li {
@@ -99,13 +99,6 @@ li, nav, nav a, ol, p, section, ul {
    a#navicon:hover+ol{
       display: block;
    }
-
-   ol#row {
-      list-style: none;
-      list-style-image: none;
-      margin: 0;
-      padding: 0;
-   }
 }
 
 /* ===============================
@@ -119,5 +112,6 @@ li, nav, nav a, ol, p, section, ul {
    position: fixed;
    bottom: 0;
    width: 100%;
-   background-image: linear-gradient(180deg, white, lightgray);
+   background-image: linear-gradient(180deg, white, lightblue);
+   letter-spacing: 2px;
 }

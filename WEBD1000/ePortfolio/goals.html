@@ -1,39 +1,107 @@
 <!DOCTYPE html>
-<html id="goals" lang="en">
+<html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Goals</title>
         <link rel="stylesheet" href="portfolio_style.css">
         <link rel="stylesheet" href="portfolio_layout.css">
+        <link rel="stylesheet" href="portfolio_reset.css">
     </head>
     <body>
         <header>
-            <h1>Goals</h1>
-            <nav class="menu">
-                <a id="navicon" href="#"><img src="img/tf_navicon.png" alt="" /></a>
-                <ol class="row">
-                    <li><a href="index.html">|Home|</a></li>
-                    <li><a href="contact.html">|Contact|</a></li>
-                    <li><a href="goals.html">|Goals|</a></li>
-                    <li><a href="skills.html">|Skills|</a></li>
-                    <li><a href="resume.html">|Resume|</a></li>
-                </ol>
-            </nav>
+                <nav id="menu">
+                    <a id="navicon" href="#"><img src="img/tf_navicon.png" alt="" /></a>
+                    <ol id="row">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="goals.html">Goals</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                    </ol>
+                </nav>
         </header>
-            <ul>
-                <li>
-                    Be mentally and physically healthy.
-                </li>
-                <li>
-                    Work in a really nice place.
-                </li>
-                <li>
-                    Have time to pursuit things that I like
-                </li>
-            </ul>
-        <img src="img/baraDur.jpg" alt="baraDur" height="320" width="480">
-        <footer>
-            <img id="footerImg" src="img/footer.gif" alt="Chill" height="200" width="480">            
+        <body>
+            <article  id="myGoals">
+                <section id="mainGoal">
+                    <p>
+                        My major goal is to create conditions to have a balanced life. 
+                    </p>
+                </section>
+                <section id="professionalGoals">
+                    <h2>Professional Goals</h2>
+                    <ul>
+                        <li>Develop knowledge in consolided programming languages</li>
+                        <li>Dive into new technologies</li>
+                        <li>Develop reliable code:</li>
+                            <ul>
+                                <li>Final user oriented</li>
+                                <li>Easily manintainable</li>
+                                <li>High-Performance</li>
+                                <li>Align with market frameworks</li>
+                                <li>Modularized</li>
+                                <li>REST API focused</li>
+                            </ul>
+                        <li>Have a consolidated knowledge in databases, queries, ETL and performance</li>
+                        <li>Meet market requirements for software development frameworks</li>
+                        <li>Get certificated</li>
+                    </ul>
+                </section>
+                <section id="personalGoals">
+                    <h2>Personal Goals</h2>
+                    <ul>
+                        <li>Cook more</li>
+                        <li>Get back cycling</li>
+                        <li>Attend a photography class</li>
+                        <li>Learn how to sail</li>
+                        <li>Travel to:</li>
+                        <ul>
+                            <li>Peggys Cove</li>
+                            <li>Cape Breton</li>
+                            <li>Newfoundland</li>
+                            <li>Montreal</li>
+                        </ul>
+                        <li>Learn French</li>
+                        <li>Learn how to ride a longboard</li>
+                    </ul>
+                </section>
+                <section id="bannerContainer">
+                    <img id="simpleBanner" src="img/GO-Development-Banner.jpg" alt=""> 
+                    <script>
+                        //Initializing
+                        var i = 0;
+                        var images = []; //array
+                        var time = 5000; // time in millie seconds
+    
+                        //images
+                        images[0] = "img/peggyscovebanner2.jpg";
+                        images[1] = "img/longboard.jpg";
+                        images[2] = "img/GO-Development-Banner.jpg";
+                        images[3] = "img/dockerbanner.png";
+                        
+                        //function
+                        function changeImage() {
+                            var el = document.getElementById('simpleBanner');
+                            el.src = images[i];
+                            if (i < images.length-1) {
+                                i++;
+                            } else {
+                                i = 0;
+                            }
+                            setTimeout('changeImage()', time);
+                        }
+                        window.onload = changeImage;
+                    </script>
+                </section>
+            </article>
+        </body>
+        <footer id="fixedFooter">
+            <p>
+                Bruno Freitas W0448225</br>
+                WEBD1000</br>
+                IT Web Programming</br>
+                NSCC - IT Campus</br>
+                Halifax - Nova Scotia - Canada
+            </p>
         </footer>
     </body>
 </html>

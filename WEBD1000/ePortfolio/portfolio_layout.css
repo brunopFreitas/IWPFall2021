@@ -10,37 +10,7 @@
 */
 @media only screen and (max-width: 640px) {
 
-/*menu*/
-
-/*index*/
-
-/*Contact*/
-
-/*Goals*/
-
-/*Skills*/
-
-/*Resume*/
-
-    
-
-    .presentation {
-        display: flex;
-    }
-
-    #introduction, #topic_1 {        
-        flex: 1 200px;
-        padding: 15px;
-    }
-}
-
-/* ===============================
-	    TABLET - DESKTOP
-   ===============================
-*/
-@media only screen and (min-width: 641px) {
-
-/*index*/
+    /*index*/
 
     article#presentation {
         display: flex;
@@ -56,16 +26,17 @@
     section#introduction {
         width: 466px;
         height: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
+        margin-top: 100px;
+        margin-bottom: 30px;
     }
 
     section#icons p img {
-        width: 466px;
+        width: 390px;
         height: auto;
+        margin-bottom: 20px;
     }
 
-/*Contact*/
+    /*Contact*/
 
     article#contactFormBox section {
         display: flex;
@@ -75,7 +46,7 @@
     }
 
     .contactForm {
-        width: 30%;
+        width: 80%;
         border: 2px solid black;
         border-radius: 5px;
         padding: 20px;
@@ -85,7 +56,7 @@
         text-align: center;
         margin-bottom: 25px;
     }
-    
+
     .contactForm label {
         text-align: center;
     }
@@ -115,10 +86,294 @@
         cursor: pointer;
     }
 
-/*Goals*/
+    /*Goals*/
+    article#myGoals {
+        display: grid;
+        grid-template-columns: auto;
+    }
 
-/*Skills*/
+    section#mainGoal {
+        grid-row: 1;
+        grid-column: 1/ span 4;
+        width: 100%;
+        margin: 100px auto 40px auto;
+    }
 
-/*Resume*/
+    section#professionalGoals {
+        grid-row: 2;
+        grid-column: 1/ span 4;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    section#personalGoals {
+        grid-row: 3;
+        grid-column: 1/ span 4;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    #bannerContainer {
+        grid-row: 4;
+        grid-column: 1/ span 4;
+        margin-bottom: 40px;
+    }
+
+    #simpleBanner {
+        width: 100%;
+        height: 90%;
+        align-items: center;
+    }
+
+    /*Skills*/
+
+    #skillsTab {
+        margin-top: 100px;
+    }
+
+    #skillsTab, #skillsTab tbody, #skillsTab tbody tr, #skillsTab tbody tr td, #skillsTab thead th, #skillsTab caption {
+        display: block;
+    }
+
+    #skillsTab thead, #skillsTab img {
+        display: none;
+    }
+
+    #skillsTab caption {
+        text-align: center;
+        font-size: 1.2em;
+        letter-spacing: 3px;
+    }
+
+    #skillsTab td::before{
+        content: attr(data-name);
+    }
+
+    #skillsTab td:empty {
+        visibility: hidden;
+    }
+
+    /*Resume*/
+
+    article#resume {
+        margin: 100px auto auto auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    article#resume h2 {
+        width: auto;
+        height: auto;
+        margin-bottom: 100px;
+        font-weight: normal;
+    }
+
+    article#resume img {
+        width: 250px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    article#resume img#linkedinIcon {
+        width: 180px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+}
+
+/* ===============================
+	    TABLET - DESKTOP
+   ===============================
+*/
+@media only screen and (min-width: 641px) {
+
+    /*index*/
+
+        article#presentation {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        section#icons {
+            flex: 0 1 100px;
+        }
+
+        section#introduction {
+            width: 466px;
+            height: auto;
+            margin-top: 100px;
+            margin-bottom: 30px;
+        }
+
+        section#icons p img {
+            width: 390px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+    /*Contact*/
+
+        article#contactFormBox section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .contactForm {
+            width: 30%;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .contactForm h2 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .contactForm label {
+            text-align: center;
+        }
+
+        .contactForm input, .contactForm select, .contactForm textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+        }
+
+        .contactForm input, .contactForm select, .contactForm textarea {
+            border: 1px solid #ccc;
+        }
+
+        .contactForm textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        .contactForm button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+    /*Goals*/
+        article#myGoals {
+            display: grid;
+            grid-template-columns: auto;
+        }
+
+        section#mainGoal {
+            grid-row: 1;
+            grid-column: 1/ span 4;
+            width: 100%;
+            margin: 100px auto 80px auto;
+        }
+
+        section#professionalGoals {
+            grid-row: 2;
+            grid-column: 1/ span 2;
+            margin: auto auto auto 150px;
+            width: 100%;
+
+        }
+
+        section#personalGoals {
+            grid-row: 2;
+            grid-column: 3/ span 2;
+            margin: auto;
+            width: 100%;
+
+        }
+
+        #bannerContainer {
+            grid-row: 3;
+            grid-column: 1/ span 4;
+            margin-top: 100px;
+
+        }
+
+        #simpleBanner {
+            width: 100%;
+            height: 90%;
+            align-items: center;
+        }
+
+
+    /*Skills*/
+
+    #skillsTab {
+        background-size: 40%;
+        margin: 100px auto 20px auto;
+        table-layout: auto;
+        width: 85%;
+        empty-cells: hide;
+    }
+
+    #skillsTab th, #skillsTab td {
+        font-size: 0.85em;
+        font-weight: normal;
+        padding: 5px;
+        vertical-align: top;
+        width: 14.28%;
+        word-wrap: normal;
+    }
+
+    #skillsTab tbody tr td dl img {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #skillsTab caption {
+        caption-side: top;
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 1.2em;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+    }
+
+    /*Resume*/
+
+    article#resume {
+        margin: 100px auto auto auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    article#resume h2 {
+        width: auto;
+        height: auto;
+        margin-bottom: 100px;
+        font-weight: normal;
+    }
+
+    article#resume img {
+        width: 250px;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
+    article#resume img#linkedinIcon {
+        width: 180px;
+        height: auto;
+        margin-bottom: 50px;
+    }
 
 }
