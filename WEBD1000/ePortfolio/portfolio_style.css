@@ -1,11 +1,14 @@
 @charset "UTF-8";
 /*
-Name: Bruno Freitas
-Date: 2021-10-07
+Author: Bruno Freitas
+IT Web Programming
+WEBD1000
+NSCC IT Campus
+Halifax - NS
 */
 
 /* ===============================
-	MOBILE
+	            MOBILE
    ===============================
 */
 @media only screen and (max-width: 640px) {
@@ -63,31 +66,38 @@ Date: 2021-10-07
 
   section#personalGoals h2 {
     font-size: 1.2em;
-
   }
 
   section#professionalGoals {
     font-size: 1.1em;
   }
 
+  section#professionalGoals ul li {
+    list-style-type: none;
+  }
+
   section#personalGoals {
     font-size: 1.1em;
   }
 
+  section#personalGoals ul li{
+    list-style-type: none;
+  }
+
   /*Skills*/
 
-  #skillsTab {
+  #skillsTab caption {
     border: 1px black solid;
+    font-size: 1.2em;
+    text-align: center;
+    letter-spacing: 3px;
   }
 
-  #skillsTab th, #skillsTab td {
-    border: 1px black solid;
-  }
+  #skillsTab td::before{
+    text-align: center;
+    font-size: 1.1em; 
+}
 
-  #skillsTab thead tr th {
-    background-color: #f2f2f2;
-    color: black;
-  }
 
   /*Resume*/
   article#resume h2 {
@@ -98,7 +108,7 @@ Date: 2021-10-07
 }  
 
 /* ===============================
-	    TABLET - DESKTOP
+	        TABLET - DESKTOP
    ===============================
 */
 @media only screen and (min-width: 641px) {
@@ -116,7 +126,7 @@ Date: 2021-10-07
   .contactForm h2 {
     color: black;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   
   .contactForm label {
@@ -175,12 +185,18 @@ Date: 2021-10-07
 
   #skillsTab th, #skillsTab td {
     border: 1px black solid;
+    font-size: 0.85em;
+    font-weight: normal;
   }
 
   #skillsTab thead tr th {
     background-color: #f2f2f2;
     color: black;
   }
+
+  #skillsTab caption {
+    text-align: center;;
+}
 
   /*Resume*/
   article#resume h2 {
