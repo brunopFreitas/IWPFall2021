@@ -115,18 +115,20 @@ li, nav, nav a, ol, p, section {
       font-size: 1.2em;
    }
 
-   #row {
+   /* #row {
+      display: none;
+   } */
+
+   a#navicon > img {
+      /* display: block;
+      width: 10%;
+      margin-left: auto;
+      margin-right: auto; */
       display: none;
    }
 
-   a#navicon > img {
+   /* a#navicon:hover+#row{
       display: block;
-      width: 10%;
-      margin-left: auto;
-      margin-right: auto;
-   }
+   } */
 
-   a#navicon:hover+ol{
-      display: block;
-   }
 }
